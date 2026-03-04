@@ -141,9 +141,25 @@
       setTimeout(() => { header.style.opacity = '1'; }, 100);
     }, 9000 + Math.random() * 12000);
   </script>
+<!-- Librería QRCode.js (ligera y gratis) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
+<script>
+// ¡Cambia esta URL por la tuya real!
+const miPaginaURL = "https://tupagina.com";  // ← aquí pones tu link
+
+new QRCode(document.getElementById("qrcode"), {
+  text: miPaginaURL,
+  width: 180,          // tamaño en píxeles
+  height: 180,
+  colorDark: "#000000",
+  colorLight: "#ffffff",
+  correctLevel: QRCode.CorrectLevel.H  // alta corrección para que funcione bien
+});
+</script>
 </body>
 
 </html>
+
 
 
