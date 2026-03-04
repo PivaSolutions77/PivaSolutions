@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Piva - Soporte Técnico IT | Barberena</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1 data-text="PIVA">Piva Solutions</h1>
+      <p>Soporte Técnico y Reparaciones</p>
+      <small>Barberena, Santa Rosa · Presencial y Remoto</small>
+      <div class="retro-status">SYSTEM BOOT: OK | STATUS: ONLINE</div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2>¡Arreglamos tu equipo rápido y confiable!</h2>
+        <p>Técnico con experiencia municipal + servicio independiente. Precios justos.</p>
+        
+        <a href="https://wa.me/502TU_NUMERO?text=Hola%20Piva,%20necesito%20ayuda..." class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chatea por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <section class="sobre-mi">
+      <h2>Mis servicios</h2>
+      
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <i class="fas fa-tools"></i>
+          <h3>Reparación PC / Laptop</h3>
+          <p>Hardware, virus, formateo, lentitud, actualizaciones.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <i class="fas fa-print"></i>
+          <h3>Reparación de Impresoras</h3>
+          <p>Atascos, tinta, configuración, drivers, WiFi/USB.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <i class="fas fa-rocket"></i>
+          <h3>Optimización de Equipo</h3>
+          <p>Limpieza profunda, mejora velocidad, quita bloatware.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <i class="fas fa-headset"></i>
+          <h3>Soporte Técnico</h3>
+          <p>Remoto o a domicilio: Windows, Office, WiFi, correos.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <i class="fas fa-key"></i>
+          <h3>Licencias de Office</h3>
+          <p>Instalación y activación legal de Microsoft 365 / Office.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <i class="fas fa-code"></i>
+          <h3>Macros y Automatizaciones</h3>
+          <p>Macros en Excel, flujos automáticos, ahorro de tiempo.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Análisis de Datos</h3>
+          <p>Excel avanzado, limpieza, organización, reportes.</p>
+        </div>
+        
+        <div class="servicio-card">
+          <i class="fas fa-laptop-code"></i>
+          <h3>Páginas Web Básicas</h3>
+          <p>Landing pages, WordPress, mantenimiento simple.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto">
+      <h2>Contáctame</h2>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><i class="fas fa-phone-alt"></i> +502 41327273 (WhatsApp)</p>
+          <p><i class="fas fa-envelope"></i> pivasolution77@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Barberena, Santa Rosa</p>
+        </div>
+        
+        <div class="qr-area">
+          <img src="qr-contacto.png" alt="QR contacto Piva" width="160">
+          <p>Escanea para guardar contacto</p>
+        </div>
+      </div>
+      
+      <a href="https://wa.me/50241327273?text=Hola%20Piva..." class="btn btn-whatsapp large">
+        <i class="fab fa-whatsapp"></i> Escribirme ahora
+      </a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Piva Servicios IT · Guatemala</p>
+  </footer>
+
+  <!-- Overlay retro CRT -->
+  <div class="crt-overlay"></div>
+
+  <!-- Script para animaciones retro -->
+  <script>
+    // Glitch aleatorio
+    function triggerGlitch() {
+      document.body.classList.add('glitch-active');
+      setTimeout(() => {
+        document.body.classList.remove('glitch-active');
+      }, 400 + Math.random() * 600);
+    }
+    setInterval(triggerGlitch, 6000 + Math.random() * 8000);
+
+    // Flicker leve en header
+    setInterval(() => {
+      const header = document.querySelector('header');
+      header.style.opacity = '0.9';
+      setTimeout(() => { header.style.opacity = '1'; }, 100);
+    }, 9000 + Math.random() * 12000);
+  </script>
+
+</body>
+</html>
